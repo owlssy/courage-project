@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="courageproject.css">
+</head>
+<body>
+    <nav class="navbar" id="topnav">
+        <a href="courageproject.html">Home</a>
+         <a href="feedbackCourage.html">Feedback</a>
+          <a href="aboutUs.html">About Us</a>
+         <a href="donationCourage.html">Donations</a>
+         <a href="vendors.html">Possible Vendors</a>
+         <a href="Facts.html">Facts!</a>
+         <a href="javascript:void(0)" class="fafaicon" onclick="myfunction()"><img src="bars.png"></a>
+    </nav>
+    <h3>Feedback Form</h3>
+    <form name="Feedbackform" action="mailto:feedbackcourage@gmail.com" method="POST" enctype="text/plain">
+        <label for="Firstname">First name</label>
+        <input id="Firstname" name="Firstname" type="text" onkeypress="changeinputfield()" onkeyup="resetinputfield()">
+        <label for="Lastname">Last name</label>
+        <input id="Lastname" name="Lastname" type="text">
+        <br>
+        <br>
+        <label >Gender</label>
+        <label for = "Male">Male</label>
+        <input type="radio" name="Gender" id= "Male" value="Male">
+        <label for = "Female">Female</label>
+        <input type="radio" name="Gender" id= "Female" value="Female">
+        <label for = "Prefer">Prefer not to disclose</label>
+        <input type="radio" name="Gender" id= "Prefer" value="Prefer">
+        <br>
+        <br>
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label>Where did you find my website?</label>
+        <Input type="checkbox" name="internet" id="internet">
+        <label for="internet">Internet</label>
+        <Input type="checkbox" name="SocialMedia" id="Socialmedia">
+            <label for="Socialmedia">Social Media</label>
+            <Input type="checkbox" name="Friends" id="Friends">
+            <label for="Friends">Friends</label>
+        <br>
+        <br>
+        <label for="Ratings">Rate My Website</label>
+        <select name="Ratings" id="Ratings">
+            <option value="Very Satisfied" name="Very Satisfied">Very Satisfied</option>
+            <option value="Satisfied" name="Satisfied">Satisfied</option>
+            <option value="Not Satisfied" name="Not Satisfied">Not Satisfied</option>
+        
+        </select>
+        <br>
+        <br>
+        <label for="Suggestions">Suggestions</label>
+        <textarea name="Suggestions" id="Suggestions" rows="5" cols="20">Please enter your feedback here.</textarea>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="submit">
+
+            
+        </form>
+    <footer>
+        <details> <summary>Disclamer</summary>Disclamer: This website is under my use. All pictures created by other artists do not belong to me.</details>
+        <address>My contact info</address>
+    </footer>
+    <script>
+        function changeinputfield(){
+            document.getElementById("Firstname").style.backgroundColor="lightsalmon";
+        }
+        function resetinputfield(){
+            document.getElementById("Firstname").style.backgroundColor="white";
+        }
+    </script>
+   
+    
+</body>
+</html>
